@@ -1,4 +1,5 @@
 from tkinter import Tk,Label,Button, Entry
+from xml.etree.ElementTree import Comment
 
 window = Tk()
 #spal to 😎
@@ -17,9 +18,22 @@ btn = Button()
 btn.config(text="przycisk")
 btn.grid(column=0, row=3)
 
+#Smoll button
+
+#funkcja
+def zmniejsz_przycisk():
+    sizebutton["padx"] -= 1
+    sizebutton["pady"] -= 1
+
+sizebutton = Button()
+sizebutton.config(text="smoll", command=zmniejsz_przycisk)
+sizebutton.grid(column=0, row=4)
+sizebutton.config(padx=40,pady=40)
+
 #Entry
 entry = Entry()
-entry.grid(column=0, row=4)
+entry.grid(column=0, row=5)
+
 
 
 window.mainloop()
