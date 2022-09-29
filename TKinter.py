@@ -33,6 +33,6 @@ sizebutton.config(padx=40,pady=40)
 #Entry
 entry = Entry()
 entry.grid(column=0, row=5)
-
+entry.insert(0,"herbert")
 
 window.mainloop()
