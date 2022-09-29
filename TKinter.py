@@ -1,5 +1,4 @@
 from tkinter import Tk,Label,Button, Entry
-from xml.etree.ElementTree import Comment
 
 window = Tk()
 #spal to 😎
