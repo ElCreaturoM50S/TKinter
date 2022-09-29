@@ -35,5 +35,4 @@ entry = Entry()
 entry.grid(column=0, row=5)
 
 
-
 window.mainloop()
